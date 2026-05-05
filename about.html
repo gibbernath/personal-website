@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8">
-	<title>GIBSON BERNATH</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BERNATH – ABOUT</title>
 	<style type="text/css">body {
     background-color: rgb(255, 255, 255);
 }
@@ -11,15 +12,46 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 500px;
+
+    width: 90%;
+    max-width: 500px;
+
     margin-top: 70px;
-    }
+    text-align: center;
+}
+
+.content {
+    background-color: rgb(255, 255, 255);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 90%;
+    max-width: 500px;
+
+    margin-top: 10px;
+}
+
+.about {
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
 
 .name {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 70%;
+}
+
+@media (max-width: 600px) {
+    .profile {
+        content: url(profile-hov.png);
+    }
+
+    .profile:hover {
+        content: url(profile-hov.png);
+    }
 }
 
 .name:hover {
@@ -30,13 +62,10 @@
     content: url(namehov.jpg);    
 }
 
-.content {
-    background-color: rgb(255, 255, 255);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 500px;
-    margin-top: 10px;
+@media (max-width: 600px) {
+    .menu {
+        margin-top: 35px;
+    }
 }
 
 .header {
@@ -77,6 +106,37 @@
     font-style: normal;
 }
 
+.marquee-container {
+  width: 100%;
+  border: 1px solid black;
+  padding: 5px 0;
+  overflow: hidden;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile {
+    padding-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.profile:hover {
+    padding-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    content: url(profile.png);    
+}
+
+.no-italic {
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 	</style>
 </head>
 <script>
@@ -85,7 +145,11 @@
 	}
 </script>
 <body>
-<div class="menu"><a href="index.html"><img class="name" src="name.jpg" /></a> <!-- <img class="dot" src="dot.jpg"> --></div>
+<div class="menu"><a href="index.html"><img class="name" src="name.jpg" /></a> <!-- <img class="dot" src="dot.jpg"> -->
+<p style="text-align: center; font-size: 25px"><u>ABOUT</u></p>
+<img class="profile" src="profile-hov.png">
+
+</div>
 
 <p></p>
 
@@ -93,12 +157,27 @@
 
 <div class="content">
 <div class="head">
-<p class="about"><i></i></p>
+<p class="about"><i>Born in Manhattan, raised in Amsterdam, currently based in Brooklyn. Day-to-day, I design custom electronics for large-scale brand experiences at <a href="https://www.bednark.com/experiences" style="text-decoration: none;">Bednark</a>. Besides that, I run the  <a href="https://dis.engineering/" style="text-decoration: none;">Disengineering Society</a>, a creative technology initiative that teaches people how to build their own electronic musical instruments using e-waste.</i>
+<br>
+<br>
+<i>Among many other things, I love speaking and singing in Dutch, playing weirdly competitive pick-up soccer in McCarren Park, collecting and restoring old iPods, and biking through the city to my girlfriends apartment for dinner after work.</i>
+<br>
+<br>
+<i>I (and others) call myself a <span class="no-italic">creative technologist</span> 
+        by trade, but I also call myself: </i>
+<div class="marquee-container">
+    <marquee behavior="scroll" direction="left" scrollamount="5">
+      a guitarist, a left-winger with great stamina, a comix illustrator, Robert (my legal first name), a former graffiti artist, a surfer, an older brother, a Japanese stationery enthusiast, afraid of airplane turbulence, a QR-code hater, a dumpster diver, a guitarist, a left-winger with great stamina, a comix illustrator, Robert (my legal first name), a former graffiti artist, a surfer, an older brother, a Japanese stationery enthusiast, afraid of airplane turbulence, a QR-code hater, a dumpster diver...
+    </marquee>
+  </div>
 
+</p>
 <pre class="about">
-<i>contact</i>                 gbernath@wesleyan.edu</pre>
+<i>contact</i>                 gibbernath@gmail.com
+                                       (+1) 9173614303
+</pre>
 <pre class="about">
-<a href="GIB_BERNATH_RESUME_March2022.pdf" target="_blank" style="color: black; text-decoration: none;"><i class="resume">resume</i></a></pre>
+<a href="resume.html" style="color: black; text-decoration: none;"><i class="resume">resume</i></a></pre>
 
 <pre class="currents" style="text-align: center;">
 <i>___________________________________________________</i></pre>
@@ -107,7 +186,7 @@
 <i>currents</i></pre>
 
 <pre class="currents">
-<i>favorite song:</i><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7FVvHGA46aU7mkwx4iHMRE?utm_source=generator" width="79%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></pre>
+<i>favorite song:</i><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2deA4WXDrTa7jAZuaIAeqo?utm_source=generator" width="80%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></pre>
 
 <pre class="currents">
 <i>favorite composer:</i> Jon Brion</pre>
@@ -116,14 +195,14 @@
 <i>favorite sound:</i> Vandercook Proof Press in action</pre>
 
 <pre class="currents">
-<i>favorite album:</i> fishmonger by underscores</pre>
+<i>favorite album:</i> "Dandys Rule OK" by The Dandy Warhols</pre>
 
 <pre class="currents" style="text-align: center;">
 <i>___________________________________________________</i></pre>
 <a href="#"><img class="enjoy" src="enjoy.jpg" /></a>
 
 <center>
-<p style="color: rgb(0, 0, 0); font-size: 12px; padding-right: 10px;"><i>gibson bernath - <u onclick="inspiration( );"><a href="#" style="text-decoration: none; color: black;">website design information</a></u> - last updated:</i> sept 2022</p>
+<p style="color: rgb(0, 0, 0); font-size: 12px;"><i>gibson bernath - <u onclick="inspiration( );"><a href="#" style="text-decoration: none; color: black;">website design information</a></u> - last updated:</i>may 2026</p>
 </center>
 </div>
 </div>
