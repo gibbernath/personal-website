@@ -17,6 +17,7 @@ body {
     	margin-right: auto;
         width: 500px;
         margin-top: 70px;
+        text-align: center;
     }
 
 .name {
@@ -24,6 +25,14 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 70%;
+}
+
+.title {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.5rem;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .name:hover {
@@ -34,6 +43,14 @@ body {
     content: url(namehov.jpg);    
 }
 
+.about {
+    text-align: justify;
+    width: 1000px;
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .undername {
     display: block;
     margin-left: auto;
@@ -41,79 +58,54 @@ body {
     width: 105%;
 }
 
-.songandprod {
+.disengineering {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
+    padding-bottom: 5%;
+    width: 50%;
 }
 
-.songandprod:hover {
+.disengineering:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
+    padding-bottom: 5%;
+    width: 50%;
     content: url(dis-hov.png);
 }
 
-.songonly {
+.sam {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
+    width: 20%;
 }
 
-.songonly:hover {
+.sam:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
+    width: 20%;
     content: url(sam-hov.png);
 }
 
-.prodonly {
+
+.soup {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
+    padding-top: 5%;
+    width: 40%;
 }
 
-.prodonly:hover {
+.soup:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
-    content: url(prodonlyhov.jpg);
-}
-
-.build {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-}
-
-.build:hover {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-    content: url(buildhov.jpg);
-}
-
-.wips {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-}
-
-.wips:hover {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-    content: url(wipshov.jpg);
+    padding-top: 5%;
+    width: 40%;
+    content: url(soup-hov.png);
 }
 
 .about {
@@ -149,26 +141,27 @@ body {
 
 <script>
 	function inspiration ( ) {
-		alert("This website was built completely from scratch by the author with his simple knowledge of html and css over the course of a couple days. Starting now, it will be updated regularly"); 
+		alert("This website was built completely from scratch by the author with his simple knowledge of html and css over the course of a couple days. It is updated semi-frequently - there are big plans for it though..."); 
 	}
 </script>
 
 <main>
 
     <div class="menu">
-        <a href="gibsonbernath.html"><img class="name" src="name.jpg"></a>
-        <a href="#"><img class="undername" src="undernamething.jpg"></a>
-        <a href="songandprod.html"><img class="songandprod" src="dis-logo.png"></a>
-        <a href="songonly.html"><img class="songonly" src="sam.png"></a>
-        <a href="prodonly.html"><img class="prodonly" src="prodonly.jpg"></a>
-        <a href="diy.html"><img class="build" src="build.jpg"></a>
+        <a href="#"><img class="name" src="name.jpg"></a>
+        <a href="#"><img class="undername" src="undernamething.png"></a>
+        <p class="title">[selected projects]</p>
+        <a href="https://dis.engineering"><img class="disengineering" src="dis-logo.png"></a>
+        <a href="#"><img class="sam" src="sam.png"></a>
+        <a href="#"><img class="soup" src="soup.png"></a>
         <br>
-        <a href="wips.html"><img class="wips" src="wips.jpg"></a>
+        <i style="text-align: center;">___________________________________________________</i></pre>
         <a href="about.html"><img class="about" src="about.jpg"></a>
+        <i style="text-align: center;">___________________________________________________</i></pre>
         <br>
-        <a href="#"><img class="enjoy" src="enjoy.jpg"></a>
+       <!-- <a href="#"><img class="enjoy" src="enjoy.jpg"></a>-->
         <br>
-        <center><p style="color: rgb(0, 0, 0); font-size: 12px; padding-right: 10px;"><i>gibson bernath - <u onclick="inspiration( );"><a href="#" style="text-decoration: none; color: black;">website design information</a></u> - last updated:</i> may 2026</p></center>
+        <p style="color: rgb(0, 0, 0); font-size: 12px; text-align: center;"><i>© gibson bernath - <u onclick="inspiration( );"><a href="#" style="text-decoration: none; color: black;">website design information</a></u> - last updated:</i> may 2026</p>
         <br>
     </div>
 </main>
