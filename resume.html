@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BERNATH – RESUME</title>
+
+<style>
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* LINKS AS TILES */
+.navbar a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+
+    border: 1px solid black;
+    transition: all 0.0s ease;
+}
+
+/* HOVER STATE */
+.navbar a:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+/* NAV */
+.menu {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.name {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.name:hover {
+    content: url(namehov.jpg);
+}
+
+/* CONTENT */
+.content {
+    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    max-width: 700px;
+    margin-top: 20px;
+}
+
+/* SECTION */
+.resume-section {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* JOB BLOCK */
+.job {
+    margin-bottom: 25px;
+}
+
+/* TITLE */
+.job-title {
+    font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.03em;
+
+    background-color: blue;
+    color: white;
+
+    display: inline-block;
+    padding: 2px 6px;
+}
+
+/* META */
+.job-meta {
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.02em;
+    padding-top: 5px;
+    margin-bottom: 6px;
+}
+
+/* DESCRIPTION BLOCK */
+.job-desc {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-left: 18px;
+}
+
+/* CUSTOM BULLET ROW */
+.job-item {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+
+/* "~" BULLET */
+.job-item::before {
+    content: "~";
+    flex-shrink: 0;
+}
+
+/* EDUCATION */
+.education {
+    margin-top: 30px;
+}
+
+.education .job-title {
+    background-color: red;
+    color: white;
+}
+
+/* DIVIDER */
+.divider {
+    text-align: center;
+    margin: 25px 0;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+
+.content {
+    width: 92%;
+}
+
+.job-title {
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.job-meta {
+    font-size: 14px;
+}
+
+.job-desc {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left: 10px;
+}
+
+.navbar a {
+    font-size: 16px;
+    padding: 10px 12px;
+}
+
+.menu p {
+    font-size: 20px !important;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+}
+</style>
+</head>
+
+<script>
+function inspiration() {
+    alert("This website was built completely from scratch by the author with his simple knowledge of html and css over the course of a couple days.");
+}
+</script>
+
+<body>
+
+<div class="menu">
+    <a href="index.html">
+        <img class="name" src="name.jpg">
+    </a>
+    <div class="navbar">
+        <a href="index.html">[ h o m e ]</a>
+        <a href="about.html">[ a b o u t ]</a>
+    </div>
+    <p style="font-size: 25px;"><u>WORK EXPERIENCE</u></p>
+</div>
+
+<div class="content">
+
+<div class="resume-section">
+
+<!-- BEDNARK -->
+<div class="job">
+  <div class="job-title">Audiovisual Designer | Bednark</div>
+  <div class="job-meta">★ BROOKLYN, NY ★ MARCH 2026 – PRESENT ★</div>
+
+  <div class="job-desc">
+    <div class="job-item">
+      Develop custom electronics for brand activations, experiences, and large-scale retail locations for clients including Nike, Dick’s Sporting Goods, Converse, and Taco Bell
+    </div>
+
+    <div class="job-item">
+      Lead technical AV installations on-site, directing crews to efficiently install custom electronic systems
+    </div>
+  </div>
+</div>
+
+<!-- DISENGINEERING -->
+<div class="job">
+  <div class="job-title">Founder & Program Architect | Disengineering Society</div>
+  <div class="job-meta">★ NEW YORK, NY ★ AUGUST 2022 – PRESENT ★</div>
+
+  <div class="job-desc">
+    <div class="job-item">
+      Founded a creative technology initiative transforming salvaged e-waste into functional musical instruments
+    </div>
+
+    <div class="job-item">
+      Authored, illustrated, and published three 44-page technical textbooks; exhibited internationally
+    </div>
+
+    <div class="job-item">
+      Designed and delivered educational programs adopted by universities and arts institutions
+    </div>
+
+    <div class="job-item">
+      Facilitated 30+ workshops across NYC, Amsterdam, and Philadelphia reaching 600+ participants
+    </div>
+  </div>
+</div>
+
+<!-- STEM -->
+<div class="job">
+  <div class="job-title">STEM Teacher | STEM Kids NYC</div>
+  <div class="job-meta">★ NEW YORK, NY ★ OCTOBER 2025 – MAY 2026 ★</div>
+
+  <div class="job-desc">
+    <div class="job-item">
+      Taught STEM education across NYC public schools (K–12)
+    </div>
+
+    <div class="job-item">
+      Developed curriculum focused on electrical engineering and STEM pathways
+    </div>
+  </div>
+</div>
+
+<!-- LECTURER -->
+<div class="job">
+  <div class="job-title">Invited Lecturer / Visiting Creative Technologist | Selected Institutions</div>
+  <div class="job-meta">★ 2023 – 2025 ★</div>
+
+  <div class="job-desc">
+    <div class="job-item">
+      Delivered lectures and workshops on sustainable design, creative reuse, and experimental systems
+    </div>
+
+    <div class="job-item">
+      Worked with institutions including Pratt Institute, NYU, HKU Utrecht, The Cooper Union, and Wesleyan University
+    </div>
+  </div>
+</div>
+
+<!-- WHOP -->
+<div class="job">
+  <div class="job-title">Operations Associate | Whop, Inc.</div>
+  <div class="job-meta">★ BROOKLYN, NY ★ JANUARY 2024 – SEPTEMBER 2024 ★</div>
+
+  <div class="job-desc">
+    <div class="job-item">
+      Managed operations for a 40-person team
+    </div>
+
+    <div class="job-item">
+      Oversaw travel logistics, budgeting, and company events
+    </div>
+  </div>
+</div>
+
+<!-- DIVIDER -->
+<div class="divider">
+    <i>___________________________________________________</i>
+</div>
+
+<!-- EDUCATION -->
+<div class="section-title" style="font-size: 25px; text-align: center;">
+    <u>EDUCATION</u>
+</div>
+
+<div class="education">
+
+    <div class="job">
+      <div class="job-title">Wesleyan University [2023]</div>
+      <div class="job-meta">★ MIDDLETOWN, CT ★</div>
+
+      <div class="job-desc">
+        <div class="job-item">
+          BA in Music, Minor in Integrated Design, Engineering, and Arts
+        </div>
+        <div class="job-item">
+          Honors in Music; Gwen Livingston Pokora Prize for Composition
+        </div>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-title">International School of Amsterdam [2019]</div>
+      <div class="job-meta">★ AMSTERDAM, NETHERLANDS ★</div>
+
+      <div class="job-desc">
+        <div class="job-item">
+          International Baccalaureate Diploma
+        </div>
+      </div>
+    </div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    <i>gibson bernath - 
+    <u onclick="inspiration();">website design information</u> 
+    - last updated:</i> may 2026
+</div>
+
+</body>
+</html>
