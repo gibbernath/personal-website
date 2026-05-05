@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>GIBSON BERNATH</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <style>
@@ -10,15 +11,34 @@ body {
     background-color: white;
 }
 
+a:active {
+  color: black;
+  text-decoration: none;
+}
+
 .menu {
-        background-color: transparent;
-        display: block;
-    	margin-left: auto;
-    	margin-right: auto;
-        width: 500px;
-        margin-top: 70px;
-        text-align: center;
+    background-color: transparent;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 90%;
+    max-width: 500px;
+
+    margin-top: 70px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .menu {
+        margin-top: 40px;
     }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 .name {
     display: block;
@@ -44,10 +64,41 @@ body {
 }
 
 .about {
-    text-align: justify;
-    width: 1000px;
-    font-size: 12px;
+    text-align: center;
+    font-size: 20px;
     line-height: 1.5;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+
+    
+}
+
+
+.about:hover {
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.5;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.resume {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.resume:hover {
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.5;
+    color: black;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -108,21 +159,6 @@ body {
     content: url(soup-hov.png);
 }
 
-.about {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-}
-
-.about:hover {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-    content: url(abouthov.jpg);
-}
-
 .marquee {
     background-color: red;
     display: block;
@@ -130,13 +166,6 @@ body {
     margin-right: auto;
 }
 
-.enjoy {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 15%;
-    padding-right: 30px;
-}
 </style>
 
 <script>
@@ -156,7 +185,9 @@ body {
         <a href="#"><img class="soup" src="soup.png"></a>
         <br>
         <i style="text-align: center;">___________________________________________________</i></pre>
-        <a href="about.html"><img class="about" src="about.jpg"></a>
+       
+        <p class="about"><a href="ABOUT.html">ABOUT</a></p>
+        <p class="resume"><a href="resume.html">RESUME</a></p>
         <i style="text-align: center;">___________________________________________________</i></pre>
         <br>
        <!-- <a href="#"><img class="enjoy" src="enjoy.jpg"></a>-->
