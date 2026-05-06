@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BERNATH – SAM STRAWBERRY MAN</title>
+
+<style>
+body {
+    background-color: white;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* NAV */
+.menu {
+    margin: 60px auto 0 auto;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.name {
+    width: 70%;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.navbar a {
+    padding: 8px 14px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    border: 1px solid black;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    background: white;
+    color: black;
+}
+
+/* CONTENT */
+.content {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* TITLE */
+.title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+/* IMAGES */
+.project-img {
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* SECTION LABEL */
+.section {
+    text-align: center;
+    margin: 30px 0 10px 0;
+    font-size: 20px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+}
+
+.sam-logos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.sam-logos img {
+    width: 60px;
+    height: auto;
+}
+
+.sam-logos img {
+    width: 100px;
+}
+
+.image-marquee {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    overflow: hidden;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.image-track {
+    display: flex;
+    width: max-content;
+    animation: scroll-images 45s linear infinite;
+}
+
+.image-track img {
+    height: 320px;
+    width: auto;
+    display: block;
+    flex-shrink: 0;
+}
+
+@keyframes scroll-images {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 600px) {
+    .image-track img {
+        height: 220px;
+    }
+}
+.stage-two-track {
+    animation-duration: 55s;
+}
+
+.image-track:hover {
+    animation-play-state: paused;
+}
+
+.stage-two-track img {
+    height: 500px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-style: none;
+    letter-spacing: 0.02em;
+
+}
+
+.project-video {
+    width: 100%;
+    margin: 20px 0;
+    cursor: pointer;
+    display: block;
+}
+</style>
+</head>
+
+<body>
+
+<div class="menu">
+    <a href="index.html">
+        <img class="name" src="name.jpg">
+    </a>
+
+    <div class="navbar">
+        <a href="index.html">[ h o m e ]</a>
+        <a href="about.html">[ a b o u t ]</a>
+    </div>
+
+
+</div>
+
+<div class="content">
+
+    <div class="title">SAM THE STRAWBERRY MAN</div>
+    <div class="subtitle">[The story of how I became Amsterdam's most prolific street artist]</div>
+
+    <div class="sam-logos">
+        <img src="sam-logo.png">
+        <img src="sam-logo.png">
+        <img src="sam-logo.png">
+    </div>
+<p>
+In the spring of 2015, I created Sam The Strawberry Man in an attempt to merge into the Amsterdam street art world and spread some happiness on the way. Since then, Sam has gained recognition and a following in Amsterdam, New York, and several other cities, taking on both small and large-scale xeroxed poster form, as well as sticker form. 
+</p>
+
+<div class="image-marquee">
+    <div class="image-track">
+        <img src="sam-1.png">
+        <img src="sam-2.png">
+        <img src="sam-3.png">
+        <img src="sam-4.png">
+        <img src="sam-5.png">
+        <img src="sam-6.png">
+        <img src="sam-7.png">
+        <img src="sam-8.png">
+        <img src="sam-9.png">
+
+        <img src="sam-1.png">
+        <img src="sam-2.png">
+        <img src="sam-3.png">
+        <img src="sam-4.png">
+        <img src="sam-5.png">
+        <img src="sam-6.png">
+        <img src="sam-7.png">
+        <img src="sam-8.png">
+        <img src="sam-9.png">
+    </div>
+</div>
+
+<div class="section">Stage 1: Amsterdam Posters (2015)</div>
+
+<p>
+Wooden scaffolding served as a great (technically legal) canvas for Sam to reside. People began noticing a bright red character appearing between bricks and under layers of posters. An Instagram account (@samstrawberryman) helped attach a name to the growing presence.
+</p>
+<video class="project-video" autoplay loop muted playsinline onclick="toggleVideo(this)">
+    <source src="stage-1-video.mp4" type="video/mp4">
+</video>
+
+<div class="section">Stage 2: Stickers (2016 – Present)</div>
+
+<p>
+Stickers became the next evolution—allowing Sam to travel further, appearing on public transportation, laptops, and across cities. I distributed them through a mail-in system inspired by Shepard Fairey, expanding the project globally. 
+</p>
+<div class="image-marquee">
+    <div class="image-track stage-two-track">
+        <img src="ig1.png">
+        <img src="ig2.png">
+        <img src="ig3.png">
+        <img src="ig4.png">
+        <img src="ig5.png">
+        <img src="ig6.png">
+        <img src="ig7.png">
+        <img src="ig8.png">
+        <img src="ig9.png">
+
+        <img src="ig1.png">
+        <img src="ig2.png">
+        <img src="ig3.png">
+        <img src="ig4.png">
+        <img src="ig5.png">
+        <img src="ig6.png">
+        <img src="ig7.png">
+        <img src="ig8.png">
+        <img src="ig9.png">
+    </div>
+</div>
+
+<img class="project-img" src="sam3.jpg">
+
+<p>
+Soon, photos of Sam began appearing worldwide—from Amsterdam to Rome, London, and beyond—sent by people placing him in their own environments. :contentReference[oaicite:3]{index=3}
+</p>
+
+<img class="project-img" src="sam4.jpg">
+
+<div class="section">Stage 3: Website & Apparel</div>
+
+<p>
+As interest grew, I launched a website and began producing shirts and sticker packs. Rather than mass production, I often made items by hand, maintaining control over the process. The reward was never financial—it was seeing Sam resonate with people. :contentReference[oaicite:4]{index=4}
+</p>
+
+<img class="project-img" src="sam5.jpg">
+
+<p>
+Sam even appeared unexpectedly in larger contexts, including news coverage and public spaces, reinforcing the idea that the project had grown beyond its original scope. :contentReference[oaicite:5]{index=5}
+</p>
+
+<img class="project-img" src="sam6.jpg">
+
+<div class="section">Stage 4: Books & Film</div>
+
+<p>
+Sam was featured in a published Amsterdam street art book and became the subject of a short film. Being included alongside artists I admired was a defining moment, marking both personal and artistic validation. :contentReference[oaicite:6]{index=6}
+</p>
+
+<img class="project-img" src="sam7.jpg">
+
+<p style="text-align:center; margin-top:40px;">
+<i>Sam’s journey had just begun.</i>
+</p>
+
+</div>
+
+</body>
+</html>
+
+<script>
+    function toggleVideo(video) {
+    if (video.paused) {
+        video.play();
+    } else {
+        video.pause();
+    }
+}
+</script>
